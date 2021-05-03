@@ -8,15 +8,24 @@
 .choice{
 	text-align: center;
 	list-style-type: none;
-	padding: 3%;
+	padding: 2%;
 }
 .choice a{
 	text-decoration: none;
 	font-size: 30px;
 	color: white;
+	display: inline-block;
+	height: 100px;
+	width: 550px;
+	padding: 1.5%;
 }
 .main{
 	background-image: url(img/background.jpg);
 	background-position: center;
 	background-repeat: no-repeat;
+}
+.choice :hover{
+	background-color: orange;
+	color: white;
+	text-decoration: none;
 }
