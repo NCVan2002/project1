@@ -8,12 +8,8 @@
 			$alert="Sai tên đăng nhập!";
 		}else{
 			$result= mysqli_fetch_array($result);
-			if ($result['status']==0) {
-				$alert="Tài khoản của bạn đã bị khóa";
-			}else{
-				$_SESSION['admin']=$username;
-				header("location: ?option=home");
-			}
+			$_SESSION['admin']=$username;
+			header("location: ?option=");
 		}
 	}
 ?>
