@@ -5,7 +5,22 @@
 	</tr>
 	<tr>
 		<td>
-			<section>thêm địa điểm:</section>
+			<section><a href="?option=">thêm địa điểm:</a></section>
+		</td>
+		<td>
+			<?php
+				if (isset($_GET['option'])) {
+					switch ($_GET['option']) {
+						case 'logoutadmin':
+							unset($_SESSION['admin']);
+							header("location: .");
+							break;
+						case 'addposts':
+							include 'posts/addposts.php';
+							break;
+					}
+				}
+			?>
 		</td>
 	</tr>
 </table>
