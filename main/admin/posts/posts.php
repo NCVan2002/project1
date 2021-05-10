@@ -18,7 +18,7 @@
 			<tr>
 				<td><?=$item['id']?></td>
 				<td><?=$item['name']?></td>
-				<td><?=$item['status']==1?'Active':UnActive?></td>
+				<td><?=$item['status']==1?'Active':'UnActive'?></td>
 				<td><a href="#">Update</a> | <a href="#">Delete</a></td>
 			</tr>
 		<?php endforeach;?>
